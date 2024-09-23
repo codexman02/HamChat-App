@@ -1,9 +1,9 @@
 import GithubProvider from "next-auth/providers/github"
 import CredentialsProvider from "next-auth/providers/credentials";
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
 import { User } from "../models/User";
 import { dbConnect } from "./db";
-import { mail } from "./mail";
+// import { mail } from "./mail";
 import bcrypt from "bcryptjs"
 import { AuthOptions } from "next-auth";
 export const authOptions:AuthOptions = {

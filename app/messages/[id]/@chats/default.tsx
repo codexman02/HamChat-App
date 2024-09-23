@@ -8,11 +8,11 @@ export default function MessagesPage(){
     let [isUser,setIsUser]=useState(false);
     let params=useParams();
     let id=params.id as string
-    async function getData(){
-        let session=await getSession();
-        if(session?.user._id==id){
-            setIsUser(true);
-        }
+    async function getData() {
+      let session = await getSession();
+      if (session?.user._id == id) {
+        setIsUser(true);
+      }
     }
     getData()
      return(

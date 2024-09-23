@@ -3,12 +3,14 @@ import { User } from "@/app/models/User";
 import { NextResponse } from "next/server";
 
 export async function GET(request:Request){
+        
    
     let {searchParams}=new URL(request.url)
     let a=searchParams.get('username')
     let regex;
     if(a!.length>0){
          regex=new RegExp(`${a}`)
+        //  regex=new RegExp(`^${a}$`,'i');
     }else{
         return NextResponse.json({
             status:400,
@@ -23,7 +25,8 @@ export async function GET(request:Request){
     }else{
         return NextResponse.json({
             status:400,
-            message:"No User found"
+            message:"No User found",
+            req:request.body
         })
     }
 // return NextResponse.json(a)

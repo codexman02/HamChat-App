@@ -1,8 +1,7 @@
 "use client"
-import { User } from "@/app/models/User"
 import { useParams } from "next/navigation";
 import { verification } from "@/app/utils/crud/functions";
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import {  useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 export default function VerificationPage(){

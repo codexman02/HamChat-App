@@ -4,7 +4,7 @@ import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import LightGallery from "lightgallery/react";
-import pdfjsLib from "pdfjs-dist"
+// import pdfjsLib from "pdfjs-dist"
 //import plugins
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
@@ -85,7 +85,7 @@ function fileContainer(type: string, ele2: any,pdfSrc:string | null,setPdfSrc:an
   }
   
   async function pdfMakers(ele2:any){
-    
+    //@ts-ignore
     let pdfDoc=await pdfjsLib.getDocument(ele2.image.src).promise
     const page = await pdfDoc.getPage(1);
     // var viewport = page.getViewport({ scale: scale })

@@ -1,9 +1,5 @@
 import Footer from "./Footer";
 import ImageBanner from "./ImageBanner";
-import ImageRightWithText from "./ImageRightWithText";
-import ImageWithText from "./ImageWithText";
-import { Navbar } from "./Navbar";
-
 
 export default function HomePage(){
     

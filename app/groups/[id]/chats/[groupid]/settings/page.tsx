@@ -67,9 +67,7 @@ let res=await addGroupMember(group_id as string,userid,group?.groupName as strin
 // useEffect(()=>{
 //     console.log(group,group.groupName,"grou data")
 // },[group])
-function check(){
-    console.log(group?.admin)
-}
+
 async function removeMember(member_id:string){
     let res=await deleteMember(member_id,group_id as string);
     console.log(member_id,"  ",group_id)
